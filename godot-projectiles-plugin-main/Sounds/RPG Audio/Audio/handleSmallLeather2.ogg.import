@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cfp43toxt8l14"
+path="res://.godot/imported/handleSmallLeather2.ogg-6473afd39738b460c9d7881c2d40169a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/RPG Audio/Audio/handleSmallLeather2.ogg"
+dest_files=["res://.godot/imported/handleSmallLeather2.ogg-6473afd39738b460c9d7881c2d40169a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

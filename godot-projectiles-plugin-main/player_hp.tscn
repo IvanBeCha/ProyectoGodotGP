@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnv8iybia8kkl"]
+
+[ext_resource type="Script" path="res://player_hp.gd" id="1_dayq5"]
+
+[node name="player_hp" type="HBoxContainer"]
+theme_override_constants/separation = 11
+script = ExtResource("1_dayq5")

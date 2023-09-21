@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://o1130laqpx76"
+path="res://.godot/imported/Italian Mom.ogg-36e391865d0f90f01e5527e8425da65a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/Music Loops/Loops/Italian Mom.ogg"
+dest_files=["res://.godot/imported/Italian Mom.ogg-36e391865d0f90f01e5527e8425da65a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxfnogjiqi7bp"]
+
+[ext_resource type="Script" path="res://SCORE.gd" id="1_a53ps"]
+[ext_resource type="FontFile" uid="uid://ctbb4xnecgarl" path="res://Font/rainyhearts.ttf" id="1_svmrr"]
+
+[node name="SCORE" type="Node2D"]
+script = ExtResource("1_a53ps")
+
+[node name="caja" type="CanvasLayer" parent="."]
+
+[node name="score" type="Label" parent="caja"]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_svmrr")
+theme_override_font_sizes/font_size = 30
+text = "Score:"
+
+[node name="lives" type="Label" parent="caja"]
+offset_right = 1152.0
+offset_bottom = 26.0
+theme_override_fonts/font = ExtResource("1_svmrr")
+theme_override_font_sizes/font_size = 30
+text = "Lives:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="levels" type="Label" parent="caja"]
+offset_right = 1152.0
+offset_bottom = 36.0
+theme_override_fonts/font = ExtResource("1_svmrr")
+theme_override_font_sizes/font_size = 30
+text = "Level: "
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="time" type="Label" parent="caja"]
+offset_right = 1152.0
+offset_bottom = 75.0
+theme_override_fonts/font = ExtResource("1_svmrr")
+theme_override_font_sizes/font_size = 30
+text = "Time: 00:00"
+vertical_alignment = 2
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 30.0
+one_shot = true
+autostart = true

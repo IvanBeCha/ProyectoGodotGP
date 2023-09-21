@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dftf2gyg8kemu"
+path="res://.godot/imported/Country ident.ogg-16d217d232b632519246c38447024fcc.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/Music Loops/Idents/Country ident.ogg"
+dest_files=["res://.godot/imported/Country ident.ogg-16d217d232b632519246c38447024fcc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

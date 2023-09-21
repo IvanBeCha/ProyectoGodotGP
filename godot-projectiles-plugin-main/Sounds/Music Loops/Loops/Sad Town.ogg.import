@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bqc1s48b123rj"
+path="res://.godot/imported/Sad Town.ogg-5f26c773f9f141b161e1b95084b6c9ea.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/Music Loops/Loops/Sad Town.ogg"
+dest_files=["res://.godot/imported/Sad Town.ogg-5f26c773f9f141b161e1b95084b6c9ea.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

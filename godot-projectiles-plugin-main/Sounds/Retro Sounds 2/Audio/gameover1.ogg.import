@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://lcynftf7iijc"
+path="res://.godot/imported/gameover1.ogg-2416c35fae0259d91175d72438d3abfc.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/Retro Sounds 2/Audio/gameover1.ogg"
+dest_files=["res://.godot/imported/gameover1.ogg-2416c35fae0259d91175d72438d3abfc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

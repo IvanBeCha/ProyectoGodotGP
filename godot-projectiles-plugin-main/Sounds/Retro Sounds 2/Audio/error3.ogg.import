@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bpe2w2v58my51"
+path="res://.godot/imported/error3.ogg-764bacef69fbc82468fe7c6fcaab0c2b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sounds/Retro Sounds 2/Audio/error3.ogg"
+dest_files=["res://.godot/imported/error3.ogg-764bacef69fbc82468fe7c6fcaab0c2b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

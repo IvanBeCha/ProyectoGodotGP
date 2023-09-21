@@ -1,0 +1,73 @@
+[gd_scene load_steps=5 format=3 uid="uid://c36h5x2sf7e42"]
+
+[ext_resource type="Theme" uid="uid://b42t66chx4dtj" path="res://basicThemeYay.tres" id="1_amts3"]
+[ext_resource type="Script" path="res://title_screen.gd" id="1_wk4fk"]
+[ext_resource type="Texture2D" uid="uid://bnq1aht6vn24p" path="res://SpriteHealth/Slime.png" id="3_576qw"]
+
+[sub_resource type="Theme" id="Theme_dl7p0"]
+Label/colors/font_color = Color(0.478431, 0.721569, 0.160784, 1)
+Label/colors/font_outline_color = Color(0.45098, 0.784314, 0.219608, 1)
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_amts3")
+script = ExtResource("1_wk4fk")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 22.0
+offset_top = -104.0
+offset_right = 134.0
+offset_bottom = -19.0
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Start" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Quit")
+text = "Play"
+
+[node name="Options" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../Start")
+text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 269.0
+offset_top = 25.0
+offset_right = 922.0
+offset_bottom = 334.0
+theme = SubResource("Theme_dl7p0")
+theme_override_font_sizes/font_size = 100
+text = "SLIME CASTLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 255.0
+offset_right = 956.0
+offset_bottom = 619.0
+texture = ExtResource("3_576qw")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
