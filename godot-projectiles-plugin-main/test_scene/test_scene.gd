@@ -2,10 +2,10 @@ extends Node2D
 
 @export var enemy: PackedScene
 
-@onready var heartsContainer = $CanvasLayer/player_hp
+@onready var heartsContainer = $Caja/player_hp
 @onready var player = $Player
-@onready var gameOver =$CanvasLayer/GameOver
-@onready var hud = $CanvasLayer/HUD
+@onready var gameOver =$Caja/GameOver
+@onready var hud = $CajaLayer/HUD
 
 var Score = 0
 
@@ -15,7 +15,7 @@ func _ready():
 	heartsContainer.update_health(player.hp)
 	player.healthChange.connect(heartsContainer.update_health)
 	player.death.connect(_on_player_killed)
-	$CanvasLayer/CountdownTimer.start()
+	$Caja/CountdownTimer.start()
 	UpdateTimerDisplay()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -24,7 +24,6 @@ func _process(delta):
 
 
 func _on_player_killed():
-	gameOver.set_score(Score)
 	await get_tree().create_timer(1.5).timeout
 	gameOver.visible = true
 
@@ -34,8 +33,8 @@ func _on_countdown_timer_timeout():
 	
 
 func UpdateTimerDisplay():
-	var time_left = round($CanvasLayer/CountdownTimer.time_left)
-	$CanvasLayer/TimeLeft.text = "Time left: " + str(time_left)
+	var time_left = round($Caja/CountdownTimer.time_left)
+	$Caja/TimeLeft.text = "Time left: " + str(time_left)
 	
 
 func RestartScene():

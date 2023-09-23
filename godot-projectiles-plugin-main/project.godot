@@ -15,10 +15,6 @@ run/main_scene="res://title_screen.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
-[autoload]
-
-Score="*res://SCORE.tscn"
-
 [editor_plugins]
 
 disabled=PackedStringArray("res://addons/projectiles_plugin/plugin.cfg")

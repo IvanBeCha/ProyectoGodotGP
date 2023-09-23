@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c36h5x2sf7e42"]
+[gd_scene load_steps=7 format=3 uid="uid://c36h5x2sf7e42"]
 
 [ext_resource type="Theme" uid="uid://b42t66chx4dtj" path="res://basicThemeYay.tres" id="1_amts3"]
 [ext_resource type="Script" path="res://title_screen.gd" id="1_wk4fk"]
 [ext_resource type="Texture2D" uid="uid://bnq1aht6vn24p" path="res://SpriteHealth/Slime.png" id="3_576qw"]
+[ext_resource type="Texture2D" uid="uid://crm02xmnxjmh4" path="res://SpriteHealth/aaa.jpg" id="4_l7jgf"]
+[ext_resource type="Texture2D" uid="uid://bjtbtsqhpet1" path="res://SpriteHealth/aaaaauach.png" id="5_3au08"]
 
 [sub_resource type="Theme" id="Theme_dl7p0"]
 Label/colors/font_color = Color(0.478431, 0.721569, 0.160784, 1)
@@ -17,6 +19,12 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_amts3")
 script = ExtResource("1_wk4fk")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1159.0
+offset_bottom = 648.0
+texture = ExtResource("4_l7jgf")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -50,9 +58,9 @@ text = "Quit"
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
 offset_left = 269.0
-offset_top = 25.0
+offset_top = 65.0
 offset_right = 922.0
-offset_bottom = 334.0
+offset_bottom = 374.0
 theme = SubResource("Theme_dl7p0")
 theme_override_font_sizes/font_size = 100
 text = "SLIME CASTLE"
@@ -60,12 +68,44 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="."]
+z_as_relative = false
 layout_mode = 0
-offset_left = 592.0
-offset_top = 255.0
-offset_right = 956.0
-offset_bottom = 619.0
+offset_left = 526.0
+offset_top = 266.0
+offset_right = 890.0
+offset_bottom = 630.0
 texture = ExtResource("3_576qw")
+
+[node name="Datos" type="Label" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 385.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 20
+text = "Ivan Bejarano Chaine - 338729
+Facultad de Ingenieria
+Universidad Autonoma de Chihuahua"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 861.0
+offset_top = 18.0
+offset_right = 1136.0
+offset_bottom = 102.0
+theme_override_font_sizes/font_size = 20
+text = "Game Platforms
+Alberto Pacheco Gonzalez
+Ciencias de la computacion"
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 551.0
+offset_top = 19.0
+offset_right = 690.0
+offset_bottom = 157.0
+texture = ExtResource("5_3au08")
+expand_mode = 1
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]

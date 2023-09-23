@@ -46,5 +46,4 @@ func damage(d: float) -> void:
 	hp -= d
 	$Impacto.play()
 	if hp <= 0.0:
-		dead.emit(points)
 		kill()

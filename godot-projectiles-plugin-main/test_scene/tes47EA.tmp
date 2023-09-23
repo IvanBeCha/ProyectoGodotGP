@@ -306,6 +306,12 @@ wait_time = 90.0
 one_shot = true
 autostart = true
 
+[node name="Score" type="Label" parent="Caja"]
+offset_top = 105.0
+offset_right = 48.0
+offset_bottom = 131.0
+text = "Score:"
+
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("15_dmkk7")
 

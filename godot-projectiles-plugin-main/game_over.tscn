@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://game_over.gd" id="1_8p66l"]
 [ext_resource type="FontFile" uid="uid://cmewaxv2hn2aj" path="res://Font/Fonts/Kenney Future.ttf" id="1_8ptk0"]
 [ext_resource type="Theme" uid="uid://b42t66chx4dtj" path="res://basicThemeYay.tres" id="2_sh7sb"]
+[ext_resource type="Texture2D" uid="uid://doq75s1tk4ba6" path="res://test_scene/assets/v1.1 dungeon crawler 16X16 pixel pack/heroes/knight/knight_idle_anim_f4.png" id="4_r15b8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_us65a"]
 bg_color = Color(0.458824, 0.27451, 0.6, 1)
@@ -14,10 +15,6 @@ corner_radius_bottom_left = 25
 [sub_resource type="LabelSettings" id="LabelSettings_x2gm8"]
 font = ExtResource("1_8ptk0")
 font_size = 50
-
-[sub_resource type="LabelSettings" id="LabelSettings_xx8fa"]
-font = ExtResource("1_8ptk0")
-font_size = 45
 
 [node name="GameOver" type="Control"]
 layout_mode = 3
@@ -65,42 +62,6 @@ grow_horizontal = 2
 text = "Game Over"
 label_settings = SubResource("LabelSettings_x2gm8")
 
-[node name="HighScore" type="Label" parent="Panel"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -181.5
-offset_top = -94.5
-offset_right = 182.5
-offset_bottom = -34.5
-grow_horizontal = 2
-grow_vertical = 2
-text = "Hi-Score: 9999"
-label_settings = SubResource("LabelSettings_xx8fa")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Score" type="Label" parent="Panel"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -225.0
-offset_top = -12.5
-offset_right = 226.0
-offset_bottom = 47.5
-grow_horizontal = 2
-grow_vertical = 2
-text = "Score: 9999"
-label_settings = SubResource("LabelSettings_xx8fa")
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Restart" type="Button" parent="Panel"]
 layout_mode = 1
 anchors_preset = 8
@@ -117,5 +78,15 @@ grow_vertical = 2
 theme = ExtResource("2_sh7sb")
 theme_override_font_sizes/font_size = 50
 text = "Retry"
+
+[node name="Muerto" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 313.0
+offset_top = 134.0
+offset_right = 423.0
+offset_bottom = 244.0
+texture = ExtResource("4_r15b8")
+stretch_mode = 4
+flip_v = true
 
 [connection signal="pressed" from="Panel/Restart" to="." method="_on_restart_pressed"]
